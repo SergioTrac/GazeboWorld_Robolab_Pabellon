@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+    <model name='robolab_pabellon'>
+
+        <!-- ................. -->
+        <!-- ..... LINKS ..... -->
+        <!-- ................. -->
+        <link name='core'>
+            <pose relative_to='__model__'> 0 0 0 0 0 0</pose>
+            <visual name='visual'>
+                <geometry>
+                    <mesh>
+                        <uri>model://robolab_pabellon/meshes/visual/Robolab_pabellon_visual.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+		<collision name='collision'>
+		<geometry>
+			<mesh>
+		        	<uri>model://robolab_pabellon/meshes/collision/Robolab_pabellon_collision.stl</uri>
+		    	</mesh>
+	    	</geometry>
+	    	</collision>
+
+        </link>
+        <static>true</static>
+
+    </model>
+</sdf>
